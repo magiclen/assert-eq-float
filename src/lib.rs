@@ -49,7 +49,7 @@ pub fn get_error<T: FloatCore>(a: T, b: T) -> T {
 /// assert_eq_float!(a, b, 1e-7); // use a fixed error
 /// ```
 ///
-/// Note that when using a custom panic message, use should use a semicolon `;` instead of a comma `,`.
+/// Note that when setting a custom panic message, you should use a semicolon `;` instead of a comma `,`.
 #[macro_export]
 macro_rules! assert_eq_float {
     (@standard $left:ident, $right:ident, $error:ident) => {
