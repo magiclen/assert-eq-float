@@ -17,6 +17,9 @@ The default margin of error is dynamically computed by properties of IEEE 754 fl
 
 #![no_std]
 
+#[doc(hidden)]
+pub extern crate num_traits;
+
 use num_traits::float::FloatCore;
 
 #[doc(hidden)]
@@ -54,7 +57,7 @@ pub fn get_error<T: FloatCore>(a: T, b: T) -> T {
 macro_rules! assert_eq_float {
     (@standard $left:ident, $right:ident, $error:ident) => {
         if $left != $right {
-            use num_traits::float::FloatCore;
+            use $crate::num_traits::float::FloatCore;
 
             let d_abs = ($left - $right).abs();
 
@@ -70,7 +73,7 @@ macro_rules! assert_eq_float {
     };
     (@custom $left:ident, $right:ident, $error:ident; $($arg:tt)+) => {
         if $left != $right {
-            use num_traits::float::FloatCore;
+            use $crate::num_traits::float::FloatCore;
 
             let d_abs = ($left - $right).abs();
 
