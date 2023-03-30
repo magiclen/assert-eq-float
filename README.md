@@ -14,7 +14,7 @@ assert_eq_float!(1.1 + 0.1, 1.2); // error = 0.0000000000000021316282072803005
 assert_eq_float!(1e100 + 2e100, 3e100); // error = 53290705182007510000000000000000000000000000000000000000000000000000000000000000000000
 ```
 
-The default error is dynamic computed by properties of IEEE 754 floating point numbers. You don't need to worry about it if you just want to check two float values are **equal**.
+The default margin of error is dynamically computed by properties of IEEE 754 floating point numbers. You don't need to worry about it if you just want to check two float values are **equal**.
 
 ## Crates.io
 
