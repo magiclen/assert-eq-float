@@ -1,6 +1,6 @@
 [package]
 name = "assert-eq-float"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Magic Len <len@magiclen.org>"]
 edition = "2021"
 rust-version = "1.56"
@@ -8,7 +8,7 @@ repository = "https://github.com/magiclen/assert-eq-float"
 homepage = "https://magiclen.org/assert-eq-float"
 keywords = ["assert_eq", "float", "f32", "f64"]
 categories = ["no-std", "rust-patterns"]
-description = "This crate provides the `assert_eq_float!` macro that supports floats."
+description = "This crate provides the `assert_eq_float!` macros that support floats."
 license = "MIT"
 include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]
 

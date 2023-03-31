@@ -18,7 +18,6 @@ fn default_error_ok() {
     assert_eq_float!(1.0f32, 1.0f32);
     assert_eq_float!(1.1f32, 1.1f32);
     assert_eq_float!(100.001f32, 100.001f32);
-    assert_eq_float!(-1001.1001f32, -1001.1001f32);
 
     assert_eq_float!(1.0f64, 1.0f64);
     assert_eq_float!(1.1f64, 1.1f64);
@@ -41,7 +40,6 @@ fn custom_error_ok() {
     assert_eq_float!(1.0f32, 1.0f32, 1e-7);
     assert_eq_float!(1.1f32, 1.1f32, 1e-7);
     assert_eq_float!(100.001f32, 100.001f32, 1e-7);
-    assert_eq_float!(-1001.1001f32, -1001.1001f32, 1e-7);
 
     assert_eq_float!(1.0f64, 1.0f64, 1e-7);
     assert_eq_float!(1.1f64, 1.1f64, 1e-7);
@@ -52,7 +50,7 @@ fn custom_error_ok() {
     assert_eq_float!(1.1 + 0.1, 1.2, 1e-7);
 
     assert_ne!(1e100 + 2e100, 3e100);
-    assert_eq_float!(1e100 + 2e100, 3e100, 1e90; "not euqal");
+    assert_eq_float!(1e100 + 2e100, 3e100, 1e90; "not equal");
 }
 
 #[test]

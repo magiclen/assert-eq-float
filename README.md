@@ -3,7 +3,7 @@ assert-eq-float
 
 [![CI](https://github.com/magiclen/assert-eq-float/actions/workflows/ci.yml/badge.svg)](https://github.com/magiclen/assert-eq-float/actions/workflows/ci.yml)
 
-This crate provides the `assert_eq_float!` macro that supports floats.
+This crate provides the `assert_eq_float!` macros that support floats.
 
 ## Examples
 
