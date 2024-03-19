@@ -30,7 +30,7 @@ macro_rules! assert_eq_float {
 
             let d_abs = ($left - $right).abs();
 
-            assert!(
+            ::core::assert!(
                 d_abs < $error,
                 "assertion failed: `(left == right)`\n  left: `{:?}`,\n right: `{:?}`\n  diff: `{:?}`\n error: `{:?}`",
                 $left,
@@ -46,7 +46,7 @@ macro_rules! assert_eq_float {
 
             let d_abs = ($left - $right).abs();
 
-            assert!(
+            ::core::assert!(
                 d_abs < $error,
                 $($arg)+
             );
